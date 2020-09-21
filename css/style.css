@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0 10px;
+  font-family: cursive;
+  font-size: 1rem;
+}
+
+.menu {
+  text-align: center;
+  margin: 30px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sub-container {
+  width: fit-content;
+  margin: auto;
+}
+
+.food {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+  position: relative;
+  max-width: 100%;
+  float: left;
+  height: auto;
+  background: grey;
+  width: 400px;
+}
+
+.food h3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0 32px;
+  border: 1px solid black;
+}
+
+#food-1 h3 {
+  background-color: red;
+}
+
+#food-2 h3 {
+  background-color: violet;
+}
+
+#food-3 h3 {
+  background-color: green;
+}
+
+@media screen and (min-width: 992px) {
+  /* desktop */
+
+  .food {
+    width: calc(33% - 50px);
+    float: left;
+  }
+
+  #food-1 {
+    margin-left: 0;
+  }
+
+  #food-2 {
+    margin-right: 0;
+  }
+
+  #food-3 {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Tablet */
+
+  .food:last-child {
+    width: 100%;
+  }
+
+  .food {
+    float: left;
+    width: calc(50% - 52px);
+  }
+
+  #food-1 {
+    margin-left: 0;
+  }
+
+  #food-2 {
+    margin-right: 0;
+  }
+
+  #food-3 {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+  }
+}
